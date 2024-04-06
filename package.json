@@ -1,14 +1,16 @@
 {
-  "name": "gop-shop-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@vercel/node": "^3.0.26"
-  }
+	"name": "gop-shop-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"postinstall": "npx prisma generate"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@prisma/client": "^5.12.1",
+		"@vercel/node": "^3.0.26",
+		"prisma": "^5.12.1"
+	}
 }
